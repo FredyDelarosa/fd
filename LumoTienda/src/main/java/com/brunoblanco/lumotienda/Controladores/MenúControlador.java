@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.brunoblanco.lumotienda.Clases.InventarioRopa;
 import com.brunoblanco.lumotienda.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,6 +22,11 @@ public class MenúControlador {
 
     @FXML
     private URL location;
+    private InventarioRopa inventarioRopa;
+
+    public void setInventarioRopa(InventarioRopa inventarioRopa) {
+        this.inventarioRopa = inventarioRopa;
+    }
 
     @FXML
     void CompraButton(MouseEvent event) {
